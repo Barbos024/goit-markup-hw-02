@@ -58,13 +58,39 @@ body {
   color: var(--tittle-cl);
 }
 .product-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .address {
   font-style: inherit;
   letter-spacing: 0.03em;
+  color: var(--alt-text-cl);
 }
 
+.label {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 0.84;
+  letter-spacing: 0.03em;
+  color: var(--tittle-cl);
+}
+
+.label-second {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 0.84;
+  letter-spacing: 0.03em;
+  color: var(--main-text-cl);
+}
 .btn {
   font-weight: 500;
   font-size: 16px;
@@ -72,6 +98,8 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--second-bg);
   border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 .pointer {
   cursor: pointer;
@@ -89,9 +117,14 @@ body {
 }
 
 .page-titel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 0.03em;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .section-title {
@@ -101,17 +134,29 @@ body {
 }
 
 .team-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
   text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-item-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.team-position {
+  color: var(--alt-text-cl);
   letter-spacing: 0.03em;
 }
 
 .service {
   color: var(--alt-text-cl);
-}
-
-.team-position {
-  color: var(--alt-text-cl);
-  letter-spacing: 0.03em;
 }
 
 .dark-bg {
