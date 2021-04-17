@@ -21,12 +21,37 @@
   --main-font: "Roboto", sans-serif;
   --tittle-font: "Raleway", sans-serif;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
 body {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
   color: var(--main-text-cl);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden {
@@ -52,10 +77,17 @@ body {
   color: var(--tittle-cl);
 }
 .list {
+  margin: 0;
+  padding-left: 0;
   list-style: none;
 }
 .link-current {
   color: var(--tittle-cl);
+}
+.product {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .product-item {
   font-family: Roboto;
@@ -72,6 +104,21 @@ body {
   color: var(--alt-text-cl);
 }
 
+.menu {
+  display: inline-flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo {
+  margin-right: 93px;
+}
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
 .label {
   font-family: Raleway;
   font-style: normal;
@@ -91,6 +138,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-cl);
 }
+.price-item {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+}
 .btn {
   font-weight: 500;
   font-size: 16px;
@@ -100,6 +154,24 @@ body {
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
+}
+
+.section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.page-header .address {
+  margin-right: 50px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 .pointer {
   cursor: pointer;
@@ -131,6 +203,27 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
+}
+
+.work {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.teem {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
 }
 
 .team-item {
@@ -167,6 +260,8 @@ body {
 }
 .dark-bg .page-titel {
   color: var(--alt-tittle-cl);
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .grey-bg {
