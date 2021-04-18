@@ -105,10 +105,6 @@ p {
 .address-list {
   display: flex;
 }
-.address-item {
-  margin-right: 50px;
-}
-
 .menu {
   display: inline-flex;
 }
@@ -162,13 +158,13 @@ p {
 .btn-list {
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
 }
 
-.btn-list-item:not(:first-child) {
+.btn-list-item {
   margin-left: 8px;
 }
 
@@ -254,11 +250,9 @@ p {
   width: 270px;
   height: 16px;
 }
-.product-list:not(:first-child) {
-  margin-left: 30px;
-}
 .product-list {
   flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-left: 30px;
 }
 
 .product-text {
@@ -298,6 +292,10 @@ p {
   display: flex;
 }
 
+.page-header .address {
+  margin-left: 50px;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -321,6 +319,7 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
+  height: 368px;
 }
 .team-item-name {
   font-family: Roboto;
@@ -336,7 +335,8 @@ p {
 }
 .team-box {
   text-align: center;
-  padding: 30px 32px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .service {
@@ -354,7 +354,7 @@ p {
 
 .footer-label {
   display: flex;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .socials-item:not(:last-child) {
